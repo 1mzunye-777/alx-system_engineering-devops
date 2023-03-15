@@ -1,2 +1,6 @@
 #!/bin/bash
-echo $(($BREADTH ** $LOVE))
+
+result=$(echo "scale=2; $BREATH^$LOVE" | bc)
+
+echo $result
+echo
